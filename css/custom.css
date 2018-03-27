@@ -1,6 +1,6 @@
 /* Especifico ============================================================= */
 .menu {
-    background: rgba(18, 18, 18, 0.82);
+    background: rgba(18, 18, 18, 0.95);
     position: fixed;
     top: 0;
     width: 100%;
@@ -68,7 +68,6 @@ mark {
     display: inline-block;
     cursor: pointer;
 	margin: 0;
-    margin-bottom: -6px;
 }
 
 .hbar1, .hbar2, .hbar3 {
@@ -79,6 +78,10 @@ mark {
     margin-bottom: 0;
     padding: 0;
     transition: 0.4s;
+}
+
+.menu-content {
+    margin-top: 4px;
 }
 
 .trigger:checked + .all .hamburg .hbar1 {
@@ -101,13 +104,13 @@ mark {
     background: rgba(119, 119, 119, 0.41) !important; 
 }
 @media (max-width: 550px) {
-	ul .menu-content a li {
-		margin-top: 20px;
+	ul .menu-content a:first-child li {
+		margin-top: 18px;
 	}
 	.hamburg { width: 100%; padding: 6px 0 10px 0; margin-bottom: -12px; }
 	ul .menu-content a li {
 	  display: block;
-	  padding: 16px 20px;
+	  padding: 13px 20px;
 	}
 	.mobile-only { display: none; }
 	
