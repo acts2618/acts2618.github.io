@@ -13,7 +13,26 @@
     <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- JS e JQUERY
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            "use strict";
+            $('.nav a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+	            document.getElementById("trigg").checked = false;
+                var id = $(this).attr('href'),
+                        targetOffset = $(id).offset().top;
 
+                $('html, body').animate({ 
+                    scrollTop: targetOffset - 45
+                }, 500);
+            });
+        });
+    </script>
+   
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -27,10 +46,6 @@
 	<link rel="stylesheet" href="https://rawgit.com/dhg/Skeleton/master/css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
 	
-    <!-- JS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script language="JavaScript" src="js/script.js"></script>
-
     <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -42,7 +57,7 @@
     <!-- TopMenu
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="menu">
-        <ul>
+        <ul class="nav">
 			<input type="checkbox" class="trigger" id="trigg"/>
 			<label class="all">
 				<label class="hamburg" for="trigg">
@@ -51,14 +66,14 @@
 					<div class="hbar3"></div>
 				</label>
 				<div class="menu-content">
-					<a onclick="go('#top')"><li>
+					<a href="#top"><li>
 						<i class="fa fa-home mobile-only"></i>
 						<span class="pc-only">Home</span>
 					</li></a>
-					<a onclick="go('#plataforma')" onTap="go('#plataforma')"><li>Plataforma</li></a>
-					<a onclick="go('#musicas')" onTap="go('#musicas')"><li>Músicas</li></a>
-					<a onclick="go('#trailer')" onTap="go('#trailer')"><li>Trailer</li></a>
-					<a onclick="go('#contato')" onTap="go('#contato')"><li>**Contato**</li></a>
+					<a href="#plataforma"><li>Plataforma</li></a>
+					<a href="#musicas"><li>Músicas</li></a>
+					<a href="#trailer"><li>Trailer</li></a>
+					<a href="#contato"><li>Contato*</li></a>
 				</div>
 			</label>
         </ul>
