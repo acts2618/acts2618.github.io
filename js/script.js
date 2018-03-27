@@ -6,7 +6,7 @@ $(document).ready(function(){
 				targetOffset = $(id).offset().top;
 
 		$('html, body').animate({ 
-			scrollTop: targetOffset - 45
+			scrollTop: targetOffset
 		}, 500);
 	});
 });
