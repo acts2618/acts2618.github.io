@@ -19,8 +19,6 @@
     <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
         $(document).ready(function(){
-            "use strict";
-			$.ajaxSetup({ cache: false });
             $('.nav a[href^="#"]').on('click', function(e) {
                 e.preventDefault();
 	            document.getElementById("trigg").checked = false;
