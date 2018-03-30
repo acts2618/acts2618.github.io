@@ -1,228 +1,218 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    <head>
+        <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <title>Acts 26:18</title>
+        <meta name="description" content="Acompanhe o desenvolvimento do mod Acts 26:18 para FoFix 3.21.1">
+        <meta name="author" content="JimmyFilips">
 
-<head>
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta charset="utf-8">
-    <title>Acts 26:18</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+        <!-- JS e JQUERY
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>-->
+        <script type="text/javascript" src="js/script.js"></script>
 
-    <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <!-- JS e JQUERY
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.1.min.js"></script>-->
-    <script type="text/javascript" src="js/script.js"></script>
-   
-    <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- FONT
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!--<link rel="stylesheet" href="css/normalize.css">-->
-    <!--<link rel="stylesheet" href="css/skeleton.css">-->
-	<link rel="stylesheet" href="https://rawgit.com/dhg/Skeleton/master/css/normalize.css">
-	<link rel="stylesheet" href="https://rawgit.com/dhg/Skeleton/master/css/skeleton.css">
-    <link rel="stylesheet" href="css/custom.css">
-	
-    <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="icon" type="image/png" href="images/favicon.png">
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="https://rawgit.com/dhg/Skeleton/master/css/normalize.css">
+        <link rel="stylesheet" href="https://rawgit.com/dhg/Skeleton/master/css/skeleton.css">
+        <link rel="stylesheet" href="css/custom.css">
 
-</head>
-
-<body>
-
-    <!-- TopMenu
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="menu">
-        <ul class="nav">
-			<input type="checkbox" class="trigger" id="trigg"/>
-			<div class="all">
+        <!-- Favicon
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="icon" type="image/png" href="images/favicon.png">
+    </head>
+    <body>
+        <nav class="menu">
+			<input type="checkbox" class="trigger" id="trigg">
+			<ul class="box-menu">
 				<label class="hamburg" for="trigg">
 					<div class="hbar1"></div>
 					<div class="hbar2"></div>
 					<div class="hbar3"></div>
 				</label>
 				<div class="menu-content">
-					<a href="#top"><li>
-						<i class="fa fa-home mobile-only"></i>
-						<span class="pc-only">Home</span>
+					<a href="#topo"><li>
+						<i class="fa fa-home pc-only"></i>
+						<span class="mobile-only">Home</span>
 					</li></a>
 					<a href="#plataforma"><li>Plataforma</li></a>
 					<a href="#musicas"><li>Músicas</li></a>
 					<a href="#trailer"><li>Trailer</li></a>
-					<a href="#contato"><li>Contato*</li></a>
+					<a href="contato.html" target="_self"><li>Contato</li></a>
 				</div>
-			</div>
-        </ul>
-    </div>
-    <!-- Cabeçalho
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <header class="section header" id="top">
-       <h2 style="display: none">Acts 26:18</h2>
-        <div class="container">
-            <div class="row">
-                <div class="texto-header">
-                    <img src="images/logo_m.png" alt="logo de Acts 26:18" class="size_m">
-                    <img src="images/logo_p.png" alt="logo de Acts 26:18" class="size_p">
+			</ul>
+        </nav>
+        
+        <!-- HEADER INTRODUTORIO / BANNER + LOGO
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <header class="header" id="topo">
+            <h2 style="display: none">Cabeçalho</h2>
+            <div class="container">
+                <div class="row"> 
+                    <img src="img/logo_m.png" alt="logo de Acts 26:18" class="pc-only">
+                    <img src="img/logo_p.png" alt="logo de Acts 26:18" class="mobile-only">
                 </div>
             </div>
-        </div>
-    </header>
-
-    <main>
-    <h1 style="display: none">Informações Importantes</h1>
-    <!-- Desenvolvimento –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <article class="section azul">
-        <div class="container">
-            <div class="row">
-                <h3 class="texto-medio space">Quanto já foi desenvolvido?</h3>
-            </div>
-            <div class="row">
-                <div class="one-third column">
-                    <p class="texto-grande">13%</p>
-                    <p class="texto-medio">Músicas</p>
-                    <p class="texto-pequeno">As músicas são desenvolvidas via software, e precisam ser feitas em 4 níveis de dificuldade<br>(easy, normal, hard, expert)</p>
-                </div>
-                <div class="one-third column">
-                    <p class="texto-grande">98%</p>
-                    <p class="texto-medio">Gráficos</p>
-                    <p class="texto-pequeno">Temos a intenção de trocas as imagens disponíveis de perfil, mas de resto, o mod* está visualmente pronto!</p>
-                </div>
-                <div class="one-third column">
-                    <p class="texto-grande">0%</p>
-                    <p class="texto-medio">Revisão</p>
-                    <p class="texto-pequeno">Essa é uma parte importante, porém ainda não realizada. Nenhuma das informações foram revisadas :(</p>
-                </div>
-            </div>
-
-        </div>
-    </article>
-
-    <!-- Plataforma –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <article class="section" id="plataforma">
-        <div class="container">
-            <div class="row">
-                <div class="eight columns">
-                    <h3 class="texto-medio">A Plataforma</h3>
-                    <p class="texto-pequeno">Acts 26:18 é na realidade um mod de um jogo existente, chamado "FoFix". Segundo o site oficial, <i>"FoFiX é uma variação de Frets On Fire que tenta se assemelhar ao Guitar Hero e ao Rock Band, mantendo alguns dos aspectos originais do FoF.</i></p>
-                    <p class="texto-pequeno">FoFix é um projeto complexo desenvolvido por mais de 20 pessoas,  que pode ser visto <a href="http://fretsonfire.wikidot.com/fofix" target="_blank">clicando aqui</a>, e Acts 26:18 Utiliza essa plataforma/jogo para ser executado, sendo apenas uma modificação gráfica e tendo seu proprio modo carreira e setlist exclusivas.</p>
-                    <p class="texto-pequeno">Vale ressaltar que este é um projeto aberto que não visa lucro e não detém direitos autorais sobre as músicas do mesmo.</p>
-                </div>
-                <div class="four columns">
-                    <img src="images/fofix.png" alt="logo de Acts 26:18" class="perfil space">
-                    <img src="images/logo_p.png" alt="logo de FoFix" class="perfil">
-                    <div class="space">
+        </header>
+        
+        <main>
+            <h1 style="display: none">Informações Importantes</h1>
+            
+            <!-- DESENVOLVIMENTO
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <article class="section desenvolvimento" id="desenvolvimento">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="texto-medio extra-space">Quanto já foi desenvolvido?</h3>
+                    </div>
+                    <div class="row">
+                        <div class="one-third column">
+                            <p class="texto-grande porcentagem">13%</p>
+                            <p class="texto-medio">Músicas</p>
+                            <p class="texto-pequeno">As músicas são desenvolvidas via software, e precisam ser feitas em 4 níveis de dificuldade<br>(easy, normal, hard, expert)</p>
+                        </div>
+                        <div class="one-third column">
+                            <p class="texto-grande porcentagem">98%</p>
+                            <p class="texto-medio">Gráficos</p>
+                            <p class="texto-pequeno">Temos a intenção de trocas as imagens disponíveis de perfil, mas de resto, o mod* está visualmente pronto!</p>
+                        </div>
+                        <div class="one-third column">
+                            <p class="texto-grande porcentagem">0%</p>
+                            <p class="texto-medio">Revisão</p>
+                            <p class="texto-pequeno">Essa é uma parte importante, porém ainda não realizada. Nenhuma das informações foram revisadas :(</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </article>
-    
-    <!-- Musicas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <article class="section music" id="musicas">
-        <div class="container">
-            <div class="row">
-                <h3 class="texto-medio nospace">Músicas</h3>
-                <p class="texto-pequeno">Lista de músicas com o nome de quem realizou a estrutura para o jogo.</p>
-            </div>
-            <div class="row">
-                <div class="four columns">
-                    <p class="texto-medio destaque">Pisaduras</p>
-                    <p class="texto-medio">Rodolfo Abrantes</p>
-                    <p class="texto-pequeno nospace">Expert: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Hard: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Normal: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Easy: JimmyF.</p>
-                    <p class="texto-pequeno">Revisão: ---</p>
-                </div>
-                <div class="four columns">
-                    <p class="texto-medio destaque">De Deus não se Zomba</p>
-                    <p class="texto-medio">Fruto Sagrado</p>
-                    <p class="texto-pequeno nospace">Expert: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Hard: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Normal: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Easy: JimmyF.</p>
-                    <p class="texto-pequeno">Revisão: ---</p>
-                </div>
-                <div class="four columns">
-                    <p class="texto-medio destaque">Hero</p>
-                    <p class="texto-medio">Skillet</p>
-                    <p class="texto-pequeno nospace">Expert: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Hard: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Normal: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Easy: JimmyF.</p>
-                    <p class="texto-pequeno">Revisão: ---</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="four columns">
-                    <p class="texto-medio destaque">Big Screen Lies</p>
-                    <p class="texto-medio">Stryper</p>
-                    <p class="texto-pequeno nospace">Expert: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Hard: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Normal: JimmyF.</p>
-                    <p class="texto-pequeno nospace">Easy: JimmyF.</p>
-                    <p class="texto-pequeno">Revisão: ---</p>
-                </div>
-            </div>
-
-        </div>
-        
-    </article>
-    
-    <!-- Trailer –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <article class="section wmusic" id="trailer">
-        <div class="container">
-            <div class="row">
-                <h3 class="texto-grande trailer-text">Trailer</h3>
-                <div class='embed-container'><iframe src="https://player.vimeo.com/video/261385115?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-            </div>
-            <div class="space">
-            </div>
-
-        </div>
-        
-    </article>
-    </main>
-
-    <!-- Rodapé –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <footer class="section preto" id="contato">
-        <div class="container">
-		 <div class="row"><p><mark>Página em desenvolvimento. OBS: O Trecho para contato ainda não está disponível</mark></p></div>
-         <div class="row divisor">
-             <div class="five columns texto-header">
-                 <img src="images/logo_p.png" alt="Logo do Acts 26:18">
-             </div>
-              <div class="four columns a-left  b-right">
-                  <p class="texto-medio nospace">Links:</p>
-                  <p class="texto-pequeno nospace">Fof: <a href="http://fretsonfire.wikidot.com" target="_blank">Página Oficial</a></p>
-                  <p class="texto-pequeno nospace">Fofix: <a href="http://fretsonfire.wikidot.com/fofix" target="_blank">Página Oficial</a></p>
-              </div>
-              <div class="three columns a-left">
-                  <p class="texto-medio nospace">Navegação:</p>
-                  <p class="texto-pequeno nospace"><a href="#">Voltar ao topo</a></p>
-              </div>
-          </div>
-         <div class="row">
-            <div>
-                <p class="texto-menor nospace">&copy Deveras 2018 - Direitos parcialmente reservados | Mod e Site sem fins lucrativos</p>
-            </div>
-          </div>
-          
+            </article>
             
-        </div>
-    </footer>
-
-</body>
-
+            <!-- PLATAFORMA
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <article class="section plataforma" id="plataforma">
+                <div class="container">
+                    <div class="row">
+                        <div class="eight columns">
+                            <h3 class="texto-medio">A Plataforma</h3>
+                            <p class="texto-pequeno">Acts 26:18 é na realidade um mod de um jogo existente, chamado "FoFix". Segundo o site oficial, <i>"FoFiX é uma variação de Frets On Fire que tenta se assemelhar ao Guitar Hero e ao Rock Band, mantendo alguns dos aspectos originais do FoF.</i></p>
+                            <p class="texto-pequeno">FoFix é um projeto complexo desenvolvido por mais de 20 pessoas,  que pode ser visto <a href="http://fretsonfire.wikidot.com/fofix" target="_blank">clicando aqui</a>, e Acts 26:18 Utiliza essa plataforma/jogo para ser executado, sendo apenas uma modificação gráfica e tendo seu proprio modo carreira e setlist exclusivas.</p>
+                            <p class="texto-pequeno">Vale ressaltar que este é um projeto aberto que não visa lucro e não detém direitos autorais sobre as músicas do mesmo.</p>
+                        </div>
+                        <div class="four columns">
+                            <div class="row extra-space">
+                                <img src="img/fofix.png" alt="logo de Acts 26:18" class="perfil logo-img space">
+                            </div>
+                            <div class="row">
+                                <img src="img/logo_p.png" alt="logo de FoFix" class="perfil logo-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- MUSICAS
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <article class="section musicas" id="musicas">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="texto-medio no-space">Músicas</h3>
+                        <p class="texto-pequeno">Lista de músicas produzidas até o momento.</p>
+                    </div>
+                    <div class="row">
+                        <div class="four columns">
+                            <p class="texto-medio nome-musica no-space">Pisaduras</p>
+                            <p class="texto-medio">Rodolfo Abrantes</p>
+                            <p class="texto-pequeno no-space">Expert: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Hard: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Normal: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Easy: JimmyF.</p>
+                            <p class="texto-pequeno">Revisão: ---</p>
+                        </div>
+                        <div class="four columns">
+                            <p class="texto-medio nome-musica no-space">De Deus não se Zomba</p>
+                            <p class="texto-medio">Fruto Sagrado</p>
+                            <p class="texto-pequeno no-space">Expert: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Hard: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Normal: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Easy: JimmyF.</p>
+                            <p class="texto-pequeno">Revisão: ---</p>
+                        </div>
+                        <div class="four columns">
+                            <p class="texto-medio nome-musica no-space">Hero</p>
+                            <p class="texto-medio">Skillet</p>
+                            <p class="texto-pequeno no-space">Expert: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Hard: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Normal: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Easy: JimmyF.</p>
+                            <p class="texto-pequeno">Revisão: ---</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="four columns">
+                            <p class="texto-medio nome-musica no-space">Big Screen Lies</p>
+                            <p class="texto-medio">Stryper</p>
+                            <p class="texto-pequeno no-space">Expert: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Hard: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Normal: JimmyF.</p>
+                            <p class="texto-pequeno no-space">Easy: JimmyF.</p>
+                            <p class="texto-pequeno">Revisão: ---</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
+            <!-- TRAILER
+            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+            <article class="section trailer" id="trailer">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="texto-medio">Trailer</h3>
+                    </div>
+                    <div class="row">
+                        <div class='embed-vimeo'>
+                            <iframe src="https://player.vimeo.com/video/261385115?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="no-space">Trailer demonstrativo</p>
+                    </div>
+                </div>
+            </article>
+        </main>
+        
+        <!-- Footer
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <footer class="section footer">
+            <h2 style="display: none">Rodapé</h2>
+            <div class="container">
+                <div class="row divisor">
+                    <div class="five columns ft-lg-column">
+                        <img class="ft-lg-img" src="img/logo_p.png" alt="Logo do Acts 26:18">
+                    </div>
+                    <div class="four columns texto-left footer-border">
+                        <p class="texto-medio no-space">Links:</p>
+                        <p class="texto-pequeno no-space">Fof: <a href="http://fretsonfire.wikidot.com" target="_blank">Página Oficial</a></p>
+                        <p class="texto-pequeno">Fofix: <a href="http://fretsonfire.wikidot.com/fofix" target="_blank">Página Oficial</a></p>
+                    </div>
+                    <div class="three columns texto-left">
+                        <p class="texto-medio no-space">Navegação:</p>
+                        <p class="texto-pequeno"><a href="#topo">Voltar ao topo</a></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="texto-pequeno no-space">&copy Deveras 2018 - Alguns direitos reservados | Mod e Site sem fins lucrativos</p>
+                </div>
+            </div>
+        </footer>
+    </body>  
 </html>
