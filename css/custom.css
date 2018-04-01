@@ -1,9 +1,9 @@
 /* Mobile/PC - Universal tag
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 480px) {
+@media (min-width: 501px) {
 	.mobile-only { display: none; }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
 	.pc-only { display: none; }
 }
 
@@ -73,7 +73,7 @@
     margin-bottom: 0;
 }
 /* Na versão mobile o titulo se iguala ao grande */
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .texto-titulo {font-size: 3.6rem;}
 }
 .texto-grande {
@@ -96,7 +96,7 @@
 .texto-left {
     text-align: left;
 }
-.img-ajust img{
+.img-adjust img{
     max-width: 100%;
 }
 
@@ -132,19 +132,31 @@
 
 /* ^ Nav / Mobile
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (min-width: 480px) {
+@media (min-width: 500px) {
 	.hamburg { display: none; }
 }
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     /* Icone Hamburguer / Linhas
     –––––––––––––––––––––––––––– */
+    .box-menu {
+        margin: 5px !important;
+        margin-bottom: 3px !important;
+        padding: 0 !important;
+    }
     .hamburg {
         display: inline-block;
         cursor: pointer;
-        margin: 0;
+        margin: 0 !important;
+        padding: 0 !important;
         width: 100%;
-        padding: 6px 0 10px 0;
-        margin-bottom: -12px;
+        text-align: right;
+        margin-bottom: -6px;
+    }
+    .hicon {
+        display: inline-block;
+        padding: 4px 6px 6px 6px;
+        margin-bottom: -8px;
+        
     }
     .hbar1, .hbar2, .hbar3 {
         width: 20px;
@@ -349,6 +361,15 @@
 }
 .download-seletores i {
     font-size: 50px;
+}
+.download-sa, .download-sa i, .download-sa p {
+    transition: all 0.2s;
+    transform: scale(1.1,1.1);
+    color: #767676;
+}
+.download-sd, .download-sd i, .download-sd p{
+    transition: all 0.5s;
+    color: #7DCEE8;
 }
 #windows, #linux, #apple {
     display: none;

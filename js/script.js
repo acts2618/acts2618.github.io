@@ -9,25 +9,25 @@ $(document).ready(function () {
             $("#windows").show(0);
             $("#linux").hide(0);
             $("#apple").hide(0);
-            $('#seletor-windows i').css('color', '#767676');
-            $('#seletor-linux i').css('color', '#7DCEE8');
-            $('#seletor-apple i').css('color', '#7DCEE8');
+            $('#seletor-windows').removeClass('download-sd').addClass('download-sa');
+            $('#seletor-linux').removeClass('download-sa').addClass('download-sd');
+            $('#seletor-apple').removeClass('download-sa').addClass('download-sd');
         }
         if (type === 'linux') {
             $("#windows").hide(0);
             $("#linux").show(0);
             $("#apple").hide(0);
-            $('#seletor-windows i').css('color', '#7DCEE8');
-            $('#seletor-linux i').css('color', '#767676');
-            $('#seletor-apple i').css('color', '#7DCEE8');
+            $('#seletor-windows').removeClass('download-sa').addClass('download-sd');
+            $('#seletor-linux').removeClass('download-sd').addClass('download-sa');
+            $('#seletor-apple').removeClass('download-sa').addClass('download-sd');
         }
         if (type === 'apple') {
             $("#windows").hide(0);
             $("#linux").hide(0);
             $("#apple").show(0);
-            $('#seletor-windows i').css('color', '#7DCEE8');
-            $('#seletor-linux i').css('color', '#7DCEE8');
-            $('#seletor-apple i').css('color', '#767676');
+            $('#seletor-windows').removeClass('download-sa').addClass('download-sd');
+            $('#seletor-linux').removeClass('download-sa').addClass('download-sd');
+            $('#seletor-apple').removeClass('download-sd').addClass('download-sa');
         }
     });
     
