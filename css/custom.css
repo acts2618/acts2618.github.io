@@ -357,6 +357,7 @@
 }
 .download-seletores a {
     cursor: pointer;
+    text-decoration: none;
 }
 .download-seletores i {
     font-size: 50px;
