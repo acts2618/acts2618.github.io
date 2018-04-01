@@ -9,7 +9,7 @@
 
 /* Backgrounds - Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */ 
-.header, .desenvolvimento {
+.header, .desenvolvimento, .download-header {
     background-position: center;
     background-size: cover;
 }
@@ -30,6 +30,9 @@
     .trailer { 
         background-image: url('../img/trailer_m.jpg'); 
     }
+    .download-header { 
+        background-image: url('../img/download_m.jpg'); 
+    }
 }
 @media (min-width: 1000px) { 
     .header { 
@@ -43,6 +46,9 @@
     }
     .trailer { 
         background-image: url('../img/trailer_g.jpg'); 
+    }
+    .download-header { 
+        background-image: url('../img/download_g.jpg'); 
     }
 }
 
@@ -60,6 +66,16 @@
     /* zera apenas a margem inferior */
     margin-bottom: 0 !important; 
 } 
+.texto-titulo {
+    font-size: 4.6rem; 
+    font-weight: 300; 
+    line-height: 1.25; 
+    margin-bottom: 0;
+}
+/* Na versão mobile o titulo se iguala ao grande */
+@media (max-width: 480px) {
+    .texto-titulo {font-size: 3.6rem;}
+}
 .texto-grande {
     font-size: 3.6rem; 
     font-weight: 300; 
@@ -79,6 +95,9 @@
 }
 .texto-left {
     text-align: left;
+}
+.img-ajust img{
+    max-width: 100%;
 }
 
 /* Nav / Padrão
@@ -198,6 +217,12 @@
     text-align: center;
 }
 
+/* main - Estilo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.main {
+    background-color: #f9f9f9;
+}
+
 /* Desenvolvimento - Estilo
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .desenvolvimento {
@@ -208,17 +233,29 @@
     color: #6843ae;
 }
 
-/* Plataforma - Estilo
+/* Jogo - Estilo
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.plataforma {
+.jogo {
     background-color: #f9f9f9;
 }
 .logo-img {
+    width: auto;
+    height: 50px;
+}
+.ilustrativo {
+    display: inline-block;
+    background-color: #e6e6e6;
+    max-width: 400px;
+    margin-bottom: 3rem;
+}
+.ilustrativo img {
     width: 100%;
-    height: auto;
-    max-width: 200px;
-    box-shadow: 0 2px 5px rgba(50,50,90,0.4);
-    border-radius: 5px;
+    margin-bottom: -0.5em;
+}
+.ilustrativo p {
+    margin: 0;
+    color: #717171;
+    font-size: 0.9em;
 }
 
 /* Musicas - Estilo
@@ -282,4 +319,80 @@
     width: 200px;
     height: 2px;
     background: #191919;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––– */
+/* PAGINAS SECUNDARIAS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Download - Estilo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.download-header {
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    min-height: 17em;
+    text-align: center;
+    color: #fff;
+}
+.download-seletores {
+    display: inline-block;
+    width: 90%;
+}
+.download-seletores div {
+    display: inline-block;
+    width: 30%;
+}
+.download-seletores a {
+    cursor: pointer;
+}
+.download-seletores i {
+    font-size: 50px;
+}
+#windows, #linux, #apple {
+    display: none;
+}
+.download-button {
+    display: inline-block;
+    background-color: #7DCEE8;
+    color: #fff;
+    text-decoration: none;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 0px #70c0d9;
+    transition: all 100ms;
+    margin-bottom: 1rem;
+}
+.download-button:hover { 
+    color: #fff !important;
+    background-color: #97ddf4;
+    transform: translate(0,-2px);
+    box-shadow: 0px 9px 0px #70c0d9;
+}
+.download-button:active  {
+    transform: translate(0,7px);
+    box-shadow: 0px 0px 0px #70c0d9;
+}
+.download-button p { 
+    margin: 0;
+}
+.download-button p:first-child { 
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.download-button p:last-child { 
+    font-size: 0.8em;
+}
+.download-description {
+    color: #c4c4c4;
+    font-size: 0.8em;
+}
+.download-box {
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 0 #dedede;
+    margin-bottom: 3rem;
 }

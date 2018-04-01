@@ -1,4 +1,38 @@
 $(document).ready(function () {
+
+    /*  Seletor de plataforma para download
+    --------------------------------------------- */
+    $('.download-seletores div a').on('click', function (e) {
+		e.preventDefault();
+        var type = $(this).attr('rel');
+        if (type === 'windows') {
+            $("#windows").show(0);
+            $("#linux").hide(0);
+            $("#apple").hide(0);
+            $('#seletor-windows i').css('color', '#767676');
+            $('#seletor-linux i').css('color', '#7DCEE8');
+            $('#seletor-apple i').css('color', '#7DCEE8');
+        }
+        if (type === 'linux') {
+            $("#windows").hide(0);
+            $("#linux").show(0);
+            $("#apple").hide(0);
+            $('#seletor-windows i').css('color', '#7DCEE8');
+            $('#seletor-linux i').css('color', '#767676');
+            $('#seletor-apple i').css('color', '#7DCEE8');
+        }
+        if (type === 'apple') {
+            $("#windows").hide(0);
+            $("#linux").hide(0);
+            $("#apple").show(0);
+            $('#seletor-windows i').css('color', '#7DCEE8');
+            $('#seletor-linux i').css('color', '#7DCEE8');
+            $('#seletor-apple i').css('color', '#767676');
+        }
+    });
+    
+    /*  Efeito de rolagem e fechamento do menu ao clicar
+    --------------------------------------------- */
 	$('a[href^="#"]').on('click', function (e) {
 		e.preventDefault();
 		document.getElementById("trigg").checked = false;
@@ -10,14 +44,13 @@ $(document).ready(function () {
 		}, 500);
 	});
     
-    /* pagina de contato */
+    /*  Ajusta a altura mínima do MAIN
+    --------------------------------------------- */
     window.onload = function () {
         var footer = document.getElementById('footer').offsetHeight,
-            menu = document.getElementById("menu").offsetHeight,
-            econtato = document.getElementById("contato"),
-            altura = "calc(100vh - 12rem - "+menu+"px - "+footer+"px);",
-            padding = "calc(6rem + "+menu+"px);";
-        econtato.style.cssText=
-            "min-height:"+altura+"; padding-top:"+padding;
+            main = document.getElementById("main"),
+            altura = "calc(100vh - "+footer+"px)";
+        main.style.cssText = "min-height:"+altura+";";
     }
+    
 });
