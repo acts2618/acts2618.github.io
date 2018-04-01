@@ -139,8 +139,8 @@
     /* Icone Hamburguer / Linhas
     –––––––––––––––––––––––––––– */
     .box-menu {
-        margin: 5px !important;
-        margin-bottom: 3px !important;
+        margin: 4px !important;
+        margin-bottom: 0 !important;
         padding: 0 !important;
     }
     .hamburg {
@@ -150,13 +150,13 @@
         padding: 0 !important;
         width: 100%;
         text-align: right;
-        margin-bottom: -6px;
     }
     .hicon {
         display: inline-block;
-        padding: 4px 6px 6px 6px;
+        padding: 6px;
         margin-bottom: -8px;
-        
+        -webkit-transform: translate(0,-2px);
+        transform: translate(0,-2px);
     }
     .hbar1, .hbar2, .hbar3 {
         width: 20px;
@@ -320,7 +320,6 @@
     justify-content: center;
     min-height: 90px;
 }
-.footer-border {}
 .divisor {
     margin-bottom: 1.5rem;
 }
@@ -364,6 +363,7 @@
 }
 .download-sa, .download-sa i, .download-sa p {
     transition: all 0.2s;
+    -webkit-transform: scale(1.1,1.1);
     transform: scale(1.1,1.1);
     color: #767676;
 }
@@ -389,10 +389,12 @@
 .download-button:hover { 
     color: #fff !important;
     background-color: #97ddf4;
+    -webkit-transform: translate(0,-2px);
     transform: translate(0,-2px);
     box-shadow: 0px 9px 0px #70c0d9;
 }
 .download-button:active  {
+    -webkit-transform: translate(0,7px);
     transform: translate(0,7px);
     box-shadow: 0px 0px 0px #70c0d9;
 }
