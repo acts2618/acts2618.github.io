@@ -13,7 +13,10 @@
     background-position: center;
     background-size: cover;
 }
-.musicas, .trailer {
+.header, .musicas {
+    background-attachment: fixed;
+}
+.musicas {
     background-repeat: repeat;
     background-position: top left;
 }
@@ -21,14 +24,11 @@
     .header { 
         background-image: url('../img/header_m.jpg'); 
     }
-    .desenvolvimento { 
-        background-image: url('../img/desenvolvimento_m.jpg'); 
-    }
     .musicas { 
         background-image: url('../img/musicas_m.jpg'); 
     }
-    .trailer { 
-        background-image: url('../img/trailer_m.jpg'); 
+    .desenvolvimento { 
+        background-image: url('../img/desenvolvimento_m.jpg'); 
     }
     .download-header { 
         background-image: url('../img/download_m.jpg'); 
@@ -38,14 +38,11 @@
     .header { 
         background-image: url('../img/header_g.jpg'); 
     }
-    .desenvolvimento { 
-        background-image: url('../img/desenvolvimento_g.jpg'); 
-    }
     .musicas { 
         background-image: url('../img/musicas_g.jpg'); 
     }
-    .trailer { 
-        background-image: url('../img/trailer_g.jpg'); 
+    .desenvolvimento { 
+        background-image: url('../img/desenvolvimento_g.jpg'); 
     }
     .download-header { 
         background-image: url('../img/download_g.jpg'); 
@@ -96,6 +93,9 @@
 .texto-left {
     text-align: left;
 }
+.titulo {
+    font-weight: 600; 
+}
 .img-adjust img{
     max-width: 100%;
 }
@@ -114,13 +114,13 @@
     margin: 0;
 }
 .menu ul a li {
+/*    padding: 20px;*/
     display: inline;
     color: #aaaaaa;
-    padding: 20px 20px;
     font-size: 0.9em;
 }
 .menu ul a li:first-child {
-    padding-right: 5px;
+/*    padding-right: 5px;*/
 }
 .menu ul a { 
     text-decoration: none; 
@@ -128,6 +128,35 @@
 }
 .trigger { 
     display: none !important; 
+}
+/* Efeito "Brackets" */
+.menu a li::before, .menu a li::after {
+	display: inline-block;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	transition: transform 0.3s, opacity 0.1s;
+}
+.menu a li::before {
+	content: '[';
+    margin-right: 9px;
+	-webkit-transform: translateX(20px);
+	-moz-transform: translateX(20px);
+	transform: translateX(20px);
+}
+.menu a li::after {
+	content: ']';
+    margin-left: 9px;
+	-webkit-transform: translateX(-20px);
+	-moz-transform: translateX(-20px);
+	transform: translateX(-20px);
+}
+.menu a:hover li::before, .menu a:hover li::after,
+.menu a:focus li::before, .menu a:focus li::after {
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
 }
 
 /* ^ Nav / Mobile
@@ -222,7 +251,7 @@
     background-color: #121212;
     display: flex;
     align-items: center;
-    height: 40vh;
+    height: 100vh;
     min-height: 27em;
 }
 .header .row {
@@ -233,16 +262,6 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .main {
     background-color: #f9f9f9;
-}
-
-/* Desenvolvimento - Estilo
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.desenvolvimento {
-    background-color: #051222;
-    color: #fff;
-}
-.porcentagem {
-    color: #6843ae;
 }
 
 /* Jogo - Estilo
@@ -270,24 +289,13 @@
     font-size: 0.9em;
 }
 
-/* Musicas - Estilo
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.musicas { 
-    background-color: #121212;
-    color: #fff;
-}
-.nome-musica {
-    color: #6843AE;
-}
-
-/* Trailer - Estilo
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.trailer {
-    background-color: #f9f9f9;
-}
-
 /* Vimeo - Estilo
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.embed-limiter {
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: aquamarine;
+}
 .embed-vimeo { 
     position: relative; 
     padding-bottom: 56.25%; /* Medida padronizada / Vimeo */
@@ -301,6 +309,26 @@
     left: 0; 
     width: 100%; 
     height: 100%; 
+}
+
+/* Musicas - Estilo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.musicas { 
+    background-color: #121212;
+    color: #fff;
+}
+.nome-musica {
+    color: #6843AE;
+}
+
+/* Desenvolvimento - Estilo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.desenvolvimento {
+    background-color: #051222;
+    color: #fff;
+}
+.porcentagem {
+    color: #6843ae;
 }
 
 /* Footer - Estilo
@@ -330,6 +358,71 @@
     width: 200px;
     height: 2px;
     background: #191919;
+}
+
+/* Botao
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.botao {
+    /* temporario */ 
+	margin: 15px 30px;
+    
+    /* Estetica */
+	border: 2px solid #fff;
+    padding: 10px 40px;
+	text-transform: uppercase;
+	font-weight: 700;
+	cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    
+    /* Efeito Botão */
+	overflow: hidden;
+    display: inline-block;
+	position: relative;
+    
+    /* Efeito de Texto */
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+/*Fundo */
+.botao:after {
+	content: '';
+        
+    /* Posicionamento */
+	position: absolute;
+	width: 100%;
+	height: 0;
+	top: 50%;
+	left: 50%;
+    
+    /* Estilo */
+    mix-blend-mode: exclusion;
+	background: #fff;
+	opacity: 1;
+    
+    /* Movimentação */
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+/* Texto / Hover-Clique */
+.botao:hover, .btn:active {
+	color: #fff;
+}
+/* botao / Hover */
+.botao:hover:after {
+	height: 300%;
+	opacity: 1;
+}
+/* botao / Clique */
+.botao:active:after {
+	height: 400%;
+	opacity: 1;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -362,6 +455,10 @@
 .download-seletores i {
     font-size: 50px;
 }
+.download-seletores i:hover {
+    -webkit-transform: scale(1.1,1.1);
+    transform: scale(1.1,1.1);
+}
 .download-sa, .download-sa i, .download-sa p {
     transition: all 0.2s;
     -webkit-transform: scale(1.1,1.1);
@@ -370,7 +467,7 @@
 }
 .download-sd, .download-sd i, .download-sd p{
     transition: all 0.5s;
-    color: #7DCEE8;
+    color: #31aef0;
 }
 #windows, #linux, #apple {
     display: none;
