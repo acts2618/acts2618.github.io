@@ -54,7 +54,7 @@
 					<a href="download.html"><li>Download</li></a>
 					<a href="index.html#jogo"><li>O Jogo</li></a>
 					<a href="index.html#musicas"><li>Músicas</li></a>
-					<a href="index.html#trailer"><li>Trailer</li></a>
+					<a href="index.html#desenvolvimento"><li>dev</li></a>
 					<a href="contato.html"><li>Contato</li></a>
 				</div>
 			</ul>
@@ -137,8 +137,25 @@
                             <p class="download-description">Download direto - 176mb</p>
                             
                             <p class="texto-medio"><strong>ATENÇÃO!</strong></p>
-                            <p class="texto-pequeno">Rodar a aplicação compilada para o linux impossibilita o download do jogo já com o mod configurado, por esse motivo, criamos o método abaixo para que você possa jogar sem dificuldade!</p>
-                            <p><strong>Desculpe, o tutorial ainda está sendo desenvolvido, mas até segunda (02/04/2018) estará disponível aqui mesmo!</strong></p>
+                            <p class="texto-pequeno">A versão linux impossibilita o download do jogo já com o mod configurado, por esse motivo, recomendamos a instalação do WineHQ! Ele consegue executar aplicativos ".exe" no linux sem dificuldades, nós testamos com o Acts e <strong>APROVAMOS!</strong></p>
+                            <p class="texto-pequeno">Para instalar, abra o terminal (Ctrl+Alt+T) e cole os seguintes comandos (um de cada vez):</p>
+                            
+                            <!-- Shell Box -->
+                            <div class="codelimit">
+                                <div class="codeheader">SHELL</div>
+                                <div class="codebox">
+                                    <p>sudo dpkg --add-architecture i386</p>
+                                    <p>wget -nc https://dl.winehq.org/wine-builds/Release.key</p>
+                                    <p>sudo apt-key add Release.key</p>
+                                    <p>sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/</p>
+                                    <p>sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ trusty main'</p>
+                                    <p>sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ xenial main'</p>
+                                    <p>sudo apt-get update</p>
+                                    <p>sudo apt-get install --install-recommends winehq-stable</p>
+                                </div>
+                            </div>
+                            
+                            <p class="texto-pequeno">Após isso é só seguir os passos abaixo, na hora de abrir o jogo é só selecionar o Wine e jogar!</p>
                         </div>
                     </div>
                     <div id="apple">

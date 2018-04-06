@@ -64,7 +64,7 @@
     margin-bottom: 0 !important; 
 } 
 .texto-titulo {
-    font-size: 4.6rem; 
+    font-size: 4.6rem !important; 
     font-weight: 300; 
     line-height: 1.25; 
     margin-bottom: 0;
@@ -98,6 +98,16 @@
 }
 .img-adjust img{
     max-width: 100%;
+}
+.roxo {
+    color: #b58eff;
+    font-weight: 500;
+}
+a {
+    color: #31aef0;
+}
+a:hover {
+    color: #4798c3;
 }
 
 /* Nav / Padrão
@@ -316,18 +326,12 @@
     background-color: #121212;
     color: #fff;
 }
-.nome-musica {
-    color: #6843AE;
-}
 
 /* Desenvolvimento - Estilo
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .desenvolvimento {
     background-color: #051222;
     color: #fff;
-}
-.porcentagem {
-    color: #6843ae;
 }
 
 /* Footer - Estilo
@@ -415,7 +419,7 @@
 }
 /* botao / Hover */
 .botao:hover:after {
-	height: 300%;
+	height: 320%;
 	opacity: 1;
 }
 /* botao / Clique */
@@ -473,22 +477,21 @@
 }
 .download-button {
     display: inline-block;
-    background-color: #7DCEE8;
+    background-color: #31aef0;
     color: #fff;
     text-decoration: none;
     width: 200px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0px 7px 0px #70c0d9;
+    box-shadow: 0px 7px 0px #4798c3;
     transition: all 100ms;
     margin-bottom: 1rem;
 }
 .download-button:hover { 
     color: #fff !important;
-    background-color: #97ddf4;
-    -webkit-transform: translate(0,-2px);
-    transform: translate(0,-2px);
-    box-shadow: 0px 9px 0px #70c0d9;
+    -webkit-transform: translate(0,-4px);
+    transform: translate(0,-4px);
+    box-shadow: 0px 11px 0px #4798c3;
 }
 .download-button:active  {
     -webkit-transform: translate(0,7px);
@@ -515,6 +518,43 @@
     border-radius: 5px;
     box-shadow: 2px 2px 0 #dedede;
     margin-bottom: 3rem;
+}
+/* Codebox */
+.codelimit {
+    margin: 0 20px;
+}
+.codebox {
+    text-align: left;
+    padding: 15px;
+    font-family: Courier, sans-serif;
+    font-size: 13px;
+    color: #fff;
+    background-color: #3d3d3d;
+    -webkit-border-radius: 0px 0px 6px 6px;
+    -moz-border-radius: 0px 0px 6px 6px;
+    border-radius: 0px 0px 6px 6px;
+    margin-bottom: 10px;
+}
+.codebox  p {
+    text-align: left;
+    color: #f9f9f9;
+    padding: 0.6rem 0;
+    border-bottom: solid 1px #555555;
+    margin: 0;
+    line-height: 1.8rem;
+}
+.codeheader {
+    text-align: left;
+    background-color: #3A5FCD;
+    padding: 5px 5px 5px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    -webkit-border-radius: 6px 6px 0px 0px;
+    -moz-border-radius: 6px 6px 0px 0px;
+    border-radius: 6px 6px 0px 0px;
 }
 
 /* Pace Loading
